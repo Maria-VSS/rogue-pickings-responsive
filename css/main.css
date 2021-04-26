@@ -3,17 +3,12 @@ html {
 
 }
 
-
 body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-size: 1em;
-	
-	
-	
-
 
 }
 
@@ -25,8 +20,6 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
-	
-	
 
 }
 
@@ -70,9 +63,6 @@ header {
 	align-items: center;
 	flex-flow: column;
 	flex-basis: 100%;
-	
-
-	
 
 }
 
@@ -131,12 +121,6 @@ header nav ul li a {
 
 }
 
-.bottom-section {
-	flex-basis: 100%;
-	justify-content: flex-start;
-
-}
-
 }
 .main-image {
 	height: auto;
@@ -171,7 +155,7 @@ header nav ul li a {
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
+	width: 100%;
 	height: auto;
 	border-top: 1px solid #eee;
 
@@ -179,12 +163,6 @@ header nav ul li a {
 
 .section-one h3 {
 	padding: 10px 0 10px 30px;
-
-}
-
-.section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
 
 }
 
@@ -228,8 +206,6 @@ footer {
 	justify-content: center;
 	align-items: center;
 	flex-basis: 100%;
-	
-
 	
 }
 
