@@ -15,7 +15,6 @@ body {
 .container{
 	max-width: 1200px;
 	flex-basis: 90%;
-	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -54,10 +53,13 @@ p {
 
 }
 
+ul {
+	margin: 0;
+}
+
 /*The widths are in a percentage!*/
 header {
 	border-bottom: 3px solid #77a466;
-	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -81,7 +83,7 @@ header h1 span {
 }
 
 header nav {
-	padding: 36px 0;
+	padding: 10px 0;
 
 }
 
@@ -95,7 +97,7 @@ header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 0.875em;
-	padding: 0 10px;
+	padding: 10px 0;
 	display: flex;
 	line-height: 325%;
 	flex-flow: column;
@@ -121,7 +123,6 @@ header nav ul li a {
 
 }
 
-}
 .main-image {
 	height: auto;
 	
@@ -161,20 +162,9 @@ header nav ul li a {
 
 }
 
-.section-one h3 {
-	padding: 10px 0 10px 30px;
-
-}
-
-.section-two h3,
-.section-three h3 {
-	padding: 10px 0 10px 30px;
-
-}
-
 .menu {
 	list-style: none;
-	padding-left: 30px;
+	padding: 0;
 
 }
 
@@ -188,12 +178,14 @@ header nav ul li a {
 	color: #333;
 	font-size: 1em;
 	line-height: 21px;
+	padding: 0;
 
 }
 
 .address {
 	font-size: 1em;
 	line-height: 24px;
+	padding: 0;
 
 }
 
@@ -215,4 +207,64 @@ footer span {
 	color: #77a466;
 	font-size: 0.875em;
 
+}
+
+
+/***** Media Queries for Responsive Design *****/
+
+
+@media all and (min-width:768px) {
+    /* Tablet styles here */
+    .bottom-section{
+    	justify-content: space-between;
+    	align-items: flex-start;
+    	border-top: 1px solid #eee;
+    	flex-flow: row;
+
+    }
+
+    .section-one,
+    .section-two,
+    .section-three {
+    	flex-basis: 30%;
+    	border-top: none;
+
+    }
+
+    .section-two {
+    	border-left: 1px solid #eee;
+    	border-right: 1px solid #eee;
+    	padding: 0 20px;
+
+    }
+}
+ 
+@media all and (min-width:1200px) {
+    /* Desktop styles here */
+    header {
+    	justify-content: space-between;
+    	flex-flow: row;
+
+    }
+
+     header h1 {
+    	width: 30%;
+    	padding: 0;
+    	border-bottom: none;
+    	text-align: left;
+
+    }
+
+
+    header nav {
+    	width: 40%;
+
+    }
+
+    
+    header nav ul {
+    	display: flex;
+    	justify-content: space-between;
+    	
+    }
 }
